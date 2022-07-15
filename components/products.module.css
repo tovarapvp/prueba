@@ -1,0 +1,25 @@
+.container{
+ 
+    display: grid;
+    width: 100%;
+    grid-template-areas: 
+    "title title"
+    "image desc";
+    grid-template-rows: auto 1fr;
+    grid-template-columns: 100px 1fr;
+    grid-gap: 1em;
+}
+.details{
+  grid-area: desc;
+}
+.title{
+    grid-area: title;
+}
+
+.image {
+    grid-area: image;
+    width: 100px;
+    height: 100px;
+
+  }
+  

@@ -1,0 +1,32 @@
+
+.separator{
+    width: 200px;
+    height: 0px;
+    border: 1px solid rgba(168, 178, 209, 0.5);
+    margin-left: 10px;
+    margin-bottom: 5px;
+    justify-content: center;
+    flex: 1 1 400px;
+}
+.section{ 
+    flex: 1 1 auto;
+}
+.about{
+    max-width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    flex-wrap: wrap;
+    
+}
+.img{ 
+    flex: 2 2s 400px;
+
+}
+.tec{
+    display: block;
+    flex:  1 1 70px;
+}
+.parraf{
+    flex: 1 1 400px;
+}

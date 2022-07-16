@@ -42,7 +42,7 @@ export default function About() {
           alt="logo"
         />
         </div>
-
+pruebas
      
      
       </div>

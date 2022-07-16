@@ -4,7 +4,7 @@ import Navbar from '../components/navbar';
 import Inf from '../components/inf'
 import Carousel from '../components/carousel';
 import About from '../components/about';
-
+import Worked from '../components/worked';
 export default function Home() {
   return (
     <div>
@@ -15,7 +15,7 @@ export default function Home() {
       <Navbar/>
       <Inf/>
       <About></About>
-      
+      <Worked/>
 
     </div>
   );

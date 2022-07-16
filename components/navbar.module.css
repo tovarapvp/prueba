@@ -1,23 +1,24 @@
-.navbar{
-     display: flex;
-     flex-direction: row;
-     align-items:center;
-     justify-content: flex-end;
-     
- 
-     
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  
 }
+
 .link {
   font-size: 12px;
-  flex: -1 1 100px;
   line-height: 14px;
   padding: 2em;
   text-transform: uppercase;
- color:white;
+  color: white;
 }
-.img{
-    flex: 1 1 0.2vw;
-    background-color: white;
+.link:hover {
+  color: #64FFDA;
+}
+.links{
+  list-style: none;
+  display:  flex;
 }
 
 .link:hover {

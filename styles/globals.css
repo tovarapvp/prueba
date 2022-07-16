@@ -23,6 +23,8 @@ a {
 
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 p {
   font-size: 0.6rem;
@@ -58,3 +60,4 @@ button{
   color: #64FFDA;
 
 }
+

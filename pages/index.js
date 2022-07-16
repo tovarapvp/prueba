@@ -1,22 +1,29 @@
 import Head from 'next/head';
-import Layout, { siteTitle } from '../components/layout';
 import Navbar from '../components/navbar';
 import Inf from '../components/inf'
 import Carousel from '../components/carousel';
 import About from '../components/about';
 import Worked from '../components/worked';
+
 export default function Home() {
   return (
-    <div>
+    
+    <>
       <Head>
-        <title>{siteTitle}</title>
+        <title>At design</title>
 
-      </Head>
-      <Navbar/>
+        </Head>
+        <Navbar/>
+        <main className={HomeStyle.main} >
+
+     
       <Inf/>
-      <About></About>
-      <Worked/>
 
-    </div>
+      <About/>
+      {/* <Footer/> */}
+        </main>
+
+
+    </>
   );
 }

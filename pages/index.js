@@ -6,6 +6,7 @@ import About from '../components/about';
 import Worked from '../components/worked';
 import HomeStyle from '../styles/Home.module.css'
 import Built from '../components/built';
+import Proyects from '../components/proyects';
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
       <About/>
       <Worked></Worked>
       <Built/>
+      <Proyects/>
       {/* <Footer/> */}
         </main>
 

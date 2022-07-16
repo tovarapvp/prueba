@@ -4,9 +4,10 @@ body {
   padding-left: 1rem;
   padding-right: 1rem;
   margin: 0px;
+  margin: auto;
   background: #020C1B;
   font-family: 'Poppins', sans-serif;
-
+  width: 80vw;
   font-size: 23px;
   font-weight: 400;
   line-height: 35px;

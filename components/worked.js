@@ -6,7 +6,7 @@ export default function Worked(){
 
 
 const Prof=[
-{name:"Weza Prosoft Ltd",
+{name:"Weza Prosoft  sdfsdfsdfsdf",
 cargo:"Software Engineer @WezaProsoft",
 fecha:"Jan 2020 - Present",
 act:[

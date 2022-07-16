@@ -4,6 +4,8 @@ import Inf from '../components/inf'
 import Carousel from '../components/carousel';
 import About from '../components/about';
 import Worked from '../components/worked';
+import HomeStyle from '../styles/Home.module.css'
+import Built from '../components/built';
 
 export default function Home() {
   return (
@@ -18,8 +20,11 @@ export default function Home() {
 
      
       <Inf/>
+      
 
       <About/>
+      <Worked></Worked>
+      <Built/>
       {/* <Footer/> */}
         </main>
 

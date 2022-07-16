@@ -1,0 +1,86 @@
+.worked{
+  display: grid;
+  grid-template-columns: auto 3fr;
+  align-items: center;
+  gap: 0 50px;
+}
+.separator{
+    grid-column: 1 /  span 2;
+
+    width: auto;
+}
+
+.separator > h6::after{
+    content: "";
+    width: 400px;
+    margin-left: 10px;
+    height: 0px;
+    border: 1px solid rgba(168, 178, 209, 0.5);
+
+
+
+}
+.bar > input[type="radio"] {
+    display: none;
+}
+
+.bar >  label  {
+    display: block;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-size: 0.9rem;
+    color: #A8B2D1;
+    user-select: none;
+      
+}
+
+.bar {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+.bar >  label::before  {
+width: auto;
+content: "";
+border-left: 5px solid #A8B2D1;
+border-bottom: 5px solid #A8B2D1;
+border-top: 5px solid #A8B2D1;
+margin: 0px;
+padding:0px;
+position: relative;
+left: -3px;
+}
+ .bar > input[type="radio"]:checked + label  {
+    display: block;
+    
+    
+    height: 1;
+    transition: .5s;
+    background: rgba(100, 255, 218, 0.2);
+}
+.bar > input[type="radio"]:checked + label::before  {
+    content: "";
+  transition: 0.5s;
+  font-weight: 100;   
+    border-left: 5px solid #64FFDA;
+    border-bottom: 5px solid #64FFDA;
+    border-top: 5px solid #64FFDA;
+    margin: 0px;
+    padding:0px;
+    position: relative;
+    left: -3px;
+}
+
+.employ > p::before{
+    content:"\A";
+    border-style: solid;
+    border-width: 8px  0 8px 12px  ;
+    border-color: transparent transparent transparent #64FFDA ;
+    position: absolute;
+    margin:9px -20px
+
+
+}
+.employ{
+
+}

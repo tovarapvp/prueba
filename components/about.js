@@ -1,5 +1,6 @@
 import Image from "next/image";
 import StyleAbout from "./about.module.css";
+import 'animate.css'
 export default function About() {
   return (
 
@@ -24,18 +25,18 @@ export default function About() {
 
 
         <div className={StyleAbout.skill}>
-        <span className={StyleAbout.tec}>TypeScript</span>
-        <span className={StyleAbout.tec}>TypeScript</span>
-        <span className={StyleAbout.tec}>React</span>
-        <span className={StyleAbout.tec}>Eleventy</span>
-        <span className={StyleAbout.tec}>Node.js</span>
-        <span className={StyleAbout.tec}>WordPress</span>
+        <span className={StyleAbout.tec +" animate__animated animate__zoomInRight"}>TypeScript</span>
+        <span className={StyleAbout.tec +" animate__animated animate__zoomInRight"}>TypeScript</span>
+        <span className={StyleAbout.tec +" animate__animated animate__zoomInRight"}>React</span>
+        <span className={StyleAbout.tec +" animate__animated animate__zoomInRight"}>Eleventy</span>
+        <span className={StyleAbout.tec +" animate__animated animate__zoomInRight"}>Node.js</span>
+        <span className={StyleAbout.tec +" animate__animated animate__zoomInRight"}>WordPress</span>
         </div>
         </div>
      
-        <div className={StyleAbout.img}>
+        <div className={StyleAbout.img }>
         <Image
-          
+          className="animate__animated animate__jackInTheBox"
           src="/images/2.jpg"
           width="300px"
           height="250px"

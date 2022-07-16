@@ -15,7 +15,7 @@ align-items: center;
     grid-column-start: 1;
     grid-column-end: 1;
     grid-row-start: 1;
-    grid-row-end: 4;
+    grid-row-end: 5;
     width: auto;
     height: 80%;
     margin: 30px;
@@ -27,4 +27,29 @@ align-items: center;
 }
 .built div:nth-child(2n){
     border-radius: 55px 0px;
+}
+.separator{
+    grid-column: 1 /  span 2;
+
+    width: auto;
+}
+
+.separator > h6::after{
+    content: "";
+    width: 400px;
+    margin-left: 10px;
+    height: 0px;
+    border: 1px solid rgba(168, 178, 209, 0.5);
+
+
+
+}
+.jobs > div > a {
+    color:#64FFDA;
+   margin: 0  1rem  0  0;
+    padding: 0px;
+   font-size: 1.2em;
+}
+.jobs > p {
+    margin: 0px;
 }

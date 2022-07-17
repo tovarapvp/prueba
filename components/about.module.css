@@ -10,18 +10,20 @@
   display: flex;
   align-items: center;
   width: 100%;
+  
 }
 .separator {
+  width: 50%;
   height: 1px;
-  border: 1px solid rgba(168, 178, 209, 0.5);
-
-
+  border: solid 1px #64ffda;
   margin-left: 20px;
   margin-bottom: 0px;
-  flex: 0 1 200px;
+ 
 }
-.parraf {
-  text-align: justify;
+.section{
+display: block;
+width: initial;
+
 }
 
 
@@ -35,15 +37,13 @@
   display: block;
 }
 .abouts {
-  max-width: 450px;
-  flex:0 1 400px;
   
+  flex: 1 1 400px;
 }
 .img {
   max-width: 300px;
   position: relative;
   margin: 20px;
-
 }
 .img img {
   border-radius: 10px;
@@ -52,10 +52,9 @@
   content: "";
   width: 300px;
   height: 250px;
-position: absolute;
-border: solid 2px #64FFDA;
-border-radius: 10px;
-left: 20px;
-top: 20px;
-
+  position: absolute;
+  border: solid 2px #64ffda;
+  border-radius: 10px;
+  left: 20px;
+  top: 20px;
 }

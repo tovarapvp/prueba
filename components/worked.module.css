@@ -1,14 +1,14 @@
 .worked{
   display: grid;
-  grid-template-columns: auto 3fr;
+  grid-template-columns: 1fr 1fr;
+  
+  grid-template-areas: 
+  "employ bar";
+  
   align-items: center;
-  gap: 0 50px;
+  gap: 50px;
 }
-.separator{
-    grid-column: 1 /  span 2;
 
-    width: auto;
-}
 
 .separator > h6::after{
     content: "";
@@ -38,7 +38,12 @@
     padding: 0px;
     margin: 0px;
     border: none;
+    grid-area: employ;
 }
+.employ{
+    max-width: 600px;
+    grid-area:bar;
+ }
 .bar >  label::before  {
 width: auto;
 content: "";
@@ -81,7 +86,70 @@ left: -3px;
 
 
 }
-.employ{
-   max-width: 600px;
+
+
+.worked_container {
+    max-width: 800px;
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+
+.title {
+    display: flex;
+    align-items: center;
+    width: 100%;
  
+}
+.business{
+    font-size: 2em;
+}
+  .separator {
+    width: 30%;
+    height: 1px;
+    border: solid 1px #64ffda;
+    margin-left: 20px;
+    margin-bottom: 0px;
+   
+  }
+  .section{
+  display: block;
+  width: 250px;
+  
+  }
+  @media (max-width:767px) {
+    .worked{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "employ "
+        "bar";
+        margin: 20px;
+        align-items: flex-end;
+      }
+      
+    .separator {
+       display: none;
+    }
+    .bar {
+        padding: 0px;
+        margin: 0px;
+        border: none;
+        height: 200px;
+        overflow: scroll;
+        overflow-x: hidden;
+    } 
+ 
+    .employ{
+        max-width: 400px;
+      
+  }
+  .job{
+    width: 250px;
+    font-size: 20px;
+}
+
 }

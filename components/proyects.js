@@ -83,7 +83,7 @@ console.log(Jobs);
 
 
 export default function Proyects() {
-    const [value ,setvalue] =useState(6)
+    const [value ,setvalue] =useState(3)
 
   return (
     <>
@@ -115,7 +115,7 @@ export default function Proyects() {
       {value < Jobs.length ? (
         <button onClick={ ()=>setvalue(Jobs.length)}  className={Style.button}>Show More</button>
       ) : (
-        <button onClick={ ()=>setvalue(6)}  className={Style.button}>Show less</button>
+        <button onClick={ ()=>setvalue(3)}  className={Style.button}>Show less</button>
 
       )}
       :

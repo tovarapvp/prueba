@@ -7,12 +7,11 @@
 
    justify-content: center;
    align-items: center;
-   flex: 1 1 400px;
 }
 .proy{
     background: #112240;
     padding: 1rem;
-    width: 400px;
+    max-width: 400px;
 }
 .proyects > h6{
   line-height: 1em;

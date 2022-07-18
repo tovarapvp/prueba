@@ -22,9 +22,9 @@ export default function Home() {
       
 
       <About/>
-      <Worked></Worked>
-      {/* <Built/>
-      <Proyects/> */}
+      <Worked/>
+      <Built/>
+      <Proyects/>
         </main>
     </>
   );

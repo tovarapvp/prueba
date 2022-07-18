@@ -1,24 +1,25 @@
 
 .proyects{
-   display: grid;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
    gap: 20px;
-   grid-template-columns: 1fr 1fr 1fr;
+
    justify-content: center;
    align-items: center;
+   flex: 1 1 400px;
 }
 .proy{
     background: #112240;
     padding: 1rem;
+    width: 400px;
 }
 .proyects > h6{
-    grid-column: 1 / span 3 ;
   line-height: 1em;
   margin-top: 20px;
 
 }
-.proyects > span{
- grid-column: 1 /  span 3;
-}
+
 .proy > div:nth-child(1){
     color:aquamarine;
 }
@@ -55,11 +56,11 @@
     display: flex;
     align-items: center;
     justify-content:space-between;
-    padding-bottom: 10px;;
+    padding-bottom: 10px;
 }
-.proyects  > button {
+.button {
     grid-column: 2;
-    margin: auto;
+    margin: 20px 0;
     min-width: 100px;
 
 }

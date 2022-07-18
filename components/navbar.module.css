@@ -53,7 +53,7 @@ display:flex;
 @media (max-width:700px){
   .nav{
 
-    position: sticky;
+    position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;

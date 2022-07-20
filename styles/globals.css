@@ -1,7 +1,10 @@
+:root{
+  --draktheme :#000;
+  --light :#fff;
+}
 html,
 body {
-
-  background: #020C1B;
+  background: var(--draktheme);
   font-family: 'Poppins', sans-serif;
   width: 100vw;
   font-size: 23px;

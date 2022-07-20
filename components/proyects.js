@@ -1,89 +1,95 @@
-import Link from "next/link";
-import Image from "next/image";
-import Style from "./proyects.module.css";
-import { useState } from "react";
-import { FaFolder, FaExternalLinkAlt } from "react-icons/fa";
+import Link from 'next/link'
+import Style from './style_component/proyects.module.css'
+import { useState } from 'react'
+import { FaFolder, FaExternalLinkAlt } from 'react-icons/fa'
 const Jobs = [
   {
-    link: "https://google.com/",
-    type: "Algolia WordPress PHP",
-    title: "WordPress Plugin for Algolia Intergration",
-    desc: "Building a custom plugin from scratch using php",
+    link: 'https://google.com/',
+    type: 'Algolia WordPress PHP',
+    title: 'WordPress Plugin for Algolia Intergration',
+    desc: 'Building a custom plugin from scratch using php'
   },
 
   {
-    link: "https://google.com/",
-    type: "Algolia WordPress PHP",
-    title: "WordPress Plugin for Algolia Intergration",
-    desc: "Building a custom plugin from scratch using php",
+    link: 'https://google.com/',
+    type: 'Algolia WordPress PHP',
+    title: 'WordPress Plugin for Algolia Intergration',
+    desc: 'Building a custom plugin from scratch using php'
   },
 
   {
-    link: "https://google.com/",
-    type: "Algolia WordPress PHP",
-    title: "WordPress Plugin for Algolia Intergration",
-    desc: "Building a custom plugin from scratch using php",
+    link: 'https://google.com/',
+    type: 'Algolia WordPress PHP',
+    title: 'WordPress Plugin for Algolia Intergration',
+    desc: 'Building a custom plugin from scratch using php'
   },
 
   {
-    link: "https://google.com/",
-    type: "Algolia WordPress PHP",
-    title: "WordPress Plugin for Algolia Intergration",
-    desc: "Building a custom plugin from scratch using php",
+    link: 'https://google.com/',
+    type: 'Algolia WordPress PHP',
+    title: 'WordPress Plugin for Algolia Intergration',
+    desc: 'Building a custom plugin from scratch using php'
   },
 
   {
-    link: "https://google.com/",
-    type: "Algolia WordPress PHP",
-    title: "WordPress Plugin for Algolia Intergration",
-    desc: "Building a custom plugin from scratch using php",
+    link: 'https://google.com/',
+    type: 'Algolia WordPress PHP',
+    title: 'WordPress Plugin for Algolia Intergration',
+    desc: 'Building a custom plugin from scratch using php'
   },
 
   {
-    link: "https://google.com/",
-    type: "Algolia WordPress PHP",
-    title: "WordPress Plugin for Algolia Intergration",
-    desc: "Building a custom plugin from scratch using php",
+    link: 'https://google.com/',
+    type: 'Algolia WordPress PHP',
+    title: 'WordPress Plugin for Algolia Intergration',
+    desc: 'Building a custom plugin from scratch using php'
   },
 
   {
-    link: "https://google.com/",
-    type: "Algolia WordPress PHP",
-    title: "WordPress Plugin for Algolia Intergration",
-    desc: "Building a custom plugin from scratch using php",
+    link: 'https://google.com/',
+    type: 'Algolia WordPress PHP',
+    title: 'WordPress Plugin for Algolia Intergration',
+    desc: 'Building a custom plugin from scratch using php'
   },
-    
-  {link:"https://google.com/",
-  type:"Algolia WordPress PHP",
-  title:"WordPress Plugin for Algolia Intergration",
-  desc:"Building a custom plugin from scratch using php"},
-    
-  {link:"https://google.com/",
-  type:"Algolia WordPress PHP",
-  title:"WordPress Plugin for Algolia Intergration",
-  desc:"Building a custom plugin from scratch using php"},
-    
-  {link:"https://google.com/",
-  type:"Algolia WordPress PHP",
-  title:"WordPress Plugin for Algolia Intergration",
-  desc:"Building a custom plugin from scratch using php"},
-    
-  {link:"https://google.com/",
-  type:"Algolia WordPress PHP",
-  title:"WordPress Plugin for Algolia Intergration",
-  desc:"Building a custom plugin from scratch using php"},
-    
-  {link:"https://google.com/",
-  type:"Algolia WordPress PHP",
-  title:"WordPress Plugin for Algolia Intergration",
-  desc:"Building a custom plugin from scratch using php"}
-];
 
-console.log(Jobs);
+  {
+    link: 'https://google.com/',
+    type: 'Algolia WordPress PHP',
+    title: 'WordPress Plugin for Algolia Intergration',
+    desc: 'Building a custom plugin from scratch using php'
+  },
 
+  {
+    link: 'https://google.com/',
+    type: 'Algolia WordPress PHP',
+    title: 'WordPress Plugin for Algolia Intergration',
+    desc: 'Building a custom plugin from scratch using php'
+  },
 
-export default function Proyects() {
-    const [value ,setvalue] =useState(3)
+  {
+    link: 'https://google.com/',
+    type: 'Algolia WordPress PHP',
+    title: 'WordPress Plugin for Algolia Intergration',
+    desc: 'Building a custom plugin from scratch using php'
+  },
+
+  {
+    link: 'https://google.com/',
+    type: 'Algolia WordPress PHP',
+    title: 'WordPress Plugin for Algolia Intergration',
+    desc: 'Building a custom plugin from scratch using php'
+  },
+
+  {
+    link: 'https://google.com/',
+    type: 'Algolia WordPress PHP',
+    title: 'WordPress Plugin for Algolia Intergration',
+    desc: 'Building a custom plugin from scratch using php'
+  }
+]
+
+export default function Proyects () {
+  const [value, setvalue] = useState(3)
 
   return (
     <>
@@ -93,7 +99,7 @@ export default function Proyects() {
         {Jobs.map((e, index) => {
           if (index < value) {
             return (
-              <div className={Style.proy} key={"text" + index}>
+              <div className={Style.proy} key={'text' + index}>
                 <div>
                   <FaFolder />
                   <Link href={e.link} passHref={true}>
@@ -106,19 +112,21 @@ export default function Proyects() {
                 <p>{e.desc}</p>
                 <span>{e.type}</span>
               </div>
-            );
+            )
           } else {
-            <></>;
+            <></>
           }
         })}
       </div>
-      {value < Jobs.length ? (
-        <button onClick={ ()=>setvalue(Jobs.length)}  className={Style.button}>Show More</button>
-      ) : (
-        <button onClick={ ()=>setvalue(3)}  className={Style.button}>Show less</button>
+      {value < Jobs.length
+        ? (
+        <button onClick={ () => setvalue(Jobs.length)} className={Style.button}>Show More</button>
+          )
+        : (
+        <button onClick={ () => setvalue(3)} className={Style.button}>Show less</button>
 
-      )}
+          )}
       :
     </>
-  );
+  )
 }

@@ -1,7 +1,7 @@
-import Image from "next/image";
-import StyleAbout from "./about.module.css";
-import "animate.css";
-export default function About() {
+import Image from 'next/image'
+import StyleAbout from './style_component/about.module.css'
+import 'animate.css'
+export default function About () {
   return (
     <div className={StyleAbout.about}>
       <div className={StyleAbout.title}>
@@ -16,42 +16,42 @@ export default function About() {
         <div className={StyleAbout.skill}>
           <span
             className={
-              StyleAbout.tec + " animate__animated animate__zoomInRight"
+              StyleAbout.tec + ' animate__animated animate__zoomInRight'
             }
           >
             TypeScript
           </span>
           <span
             className={
-              StyleAbout.tec + " animate__animated animate__zoomInRight"
+              StyleAbout.tec + ' animate__animated animate__zoomInRight'
             }
           >
             TypeScript
           </span>
           <span
             className={
-              StyleAbout.tec + " animate__animated animate__zoomInRight"
+              StyleAbout.tec + ' animate__animated animate__zoomInRight'
             }
           >
             React
           </span>
           <span
             className={
-              StyleAbout.tec + " animate__animated animate__zoomInRight"
+              StyleAbout.tec + ' animate__animated animate__zoomInRight'
             }
           >
             Eleventy
           </span>
           <span
             className={
-              StyleAbout.tec + " animate__animated animate__zoomInRight"
+              StyleAbout.tec + ' animate__animated animate__zoomInRight'
             }
           >
             Node.js
           </span>
           <span
             className={
-              StyleAbout.tec + " animate__animated animate__zoomInRight"
+              StyleAbout.tec + ' animate__animated animate__zoomInRight'
             }
           >
             WordPress
@@ -62,12 +62,13 @@ export default function About() {
       <div className={StyleAbout.img}>
         <Image
           className="animate__animated animate__jackInTheBox"
-          src="/images/2.jpg"
+          src="/images/3.jpeg"
           width="300px"
           height="250px"
           alt="logo"
+          loading="lazy"
         />
       </div>
     </div>
-  );
+  )
 }

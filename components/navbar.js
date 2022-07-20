@@ -1,7 +1,7 @@
-import Link from "next/link";
-import Image from "next/image";
-import Style from "./navbar.module.css";
-export default function navbar() {
+import Link from 'next/link'
+import Image from 'next/image'
+import Style from './style_component/navbar.module.css'
+export default function navbar () {
   return (
     <>
     <div className={Style.nav}>
@@ -13,9 +13,9 @@ export default function navbar() {
           height="40px"
           alt="logo"
         />
-      <label for="menu" className={Style.nav_label}>
+      <label htmlFor="menu" className={Style.nav_label}>
           <svg xmlns="http://www.w3.org/2000/svg" width="54" height="54">
-            <path  d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" />
+            <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z" />
           </svg>
         </label>
         <input type="checkbox" id="menu" className={Style.nav_input}></input>
@@ -31,7 +31,7 @@ export default function navbar() {
             </Link>
           </li>
           <li>
-            {" "}
+            {' '}
             <Link href="#informacion">
               <a className={Style.nav__item}>Work</a>
             </Link>
@@ -42,12 +42,12 @@ export default function navbar() {
             </Link>
           </li>
           <li>
-            {" "}
+            {' '}
             <button className={Style.button}>Resume</button>
           </li>
         </ul>
       </nav>
       </div>
     </>
-  );
+  )
 }

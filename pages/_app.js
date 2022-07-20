@@ -2,7 +2,7 @@
 import '../node_modules/@coreui/coreui/dist/css/coreui.min.css'
 import '../styles/globals.css'
 
-function MyApp({ Component, pageProps }) {
+function MyApp ({ Component, pageProps }) {
   return <Component {...pageProps} />
 }
 

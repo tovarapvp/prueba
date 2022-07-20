@@ -1,12 +1,10 @@
-import Link from "next/link";
-import Image from "next/image";
-import Style from "./worked.module.css";
-import { useState } from "react";
-import api from "../pages/api/api.json";
+import Style from './style_component/worked.module.css'
+import { useState } from 'react'
+import api from '../pages/api/api.json'
 
-export default function Worked() {
-  const Prof = api.datos;
-  const [work, setWork] = useState(0);
+export default function Worked () {
+  const Prof = api.datos
+  const [work, setWork] = useState(0)
 
   return (
     <>
@@ -20,34 +18,33 @@ export default function Worked() {
           <div className={Style.bar}>
             {Prof.map((empresa, index) => {
               return (
-                <>
-                  <input
-                    key={"input" + index}
-                    id={"e" + index}
+
+                <label className={Style.business} key={'lab' + index} htmlFor={'e' + index}>
+                    {empresa.name}
+
+                    <input
+
+                    id={'e' + index}
                     type="radio"
                     name="prof"
                     value={index}
                     checked={work == index}
-                    onChange={() => setWork(index)}
-                  />
-                <label className={Style.business} key={"lab" + index} htmlFor={"e" + index}>
-                    {empresa.name}
-                  </label>
-                </>
-              );
+                    onChange={() => setWork(index)}/>
+
+                </label>
+              )
             })}
           </div>
-
 
           <div className={Style.employ}>
           <h6 className={Style.job}>{Prof[work].cargo}</h6>
             <span>{Prof[work].fecha}</span>
             {Prof[work].act.map((e, index) => {
-              return <p key={"text" + index}>{e}</p>;
+              return <p key={'text' + index}>{e}</p>
             })}
           </div>
         </div>
       </div>
     </>
-  );
+  )
 }

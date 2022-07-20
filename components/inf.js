@@ -1,9 +1,7 @@
-import Link from "next/link"
-import Image from "next/image"
-import Style from './inf.module.css'
+import Style from './style_component/inf.module.css'
 import 'animate.css'
-export default function Inf(){
-    return (<>
+export default function Inf () {
+  return (<>
     <div className={Style.inf}>
         <span className="animate__animated animate__bounceInLeft">Hi, my name is</span>
         <h3>Stephen Gachoka.</h3>

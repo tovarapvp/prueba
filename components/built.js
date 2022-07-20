@@ -1,31 +1,31 @@
-import Link from "next/link";
-import Image from "next/image";
-import Style from "./built.module.css";
-import { useState } from "react";
-import { FaGithubSquare, FaExternalLinkAlt } from "react-icons/fa";
+import Link from 'next/link'
+import Image from 'next/image'
+import { useState } from 'react'
+import Style from './style_component/built.module.css'
+import { FaGithubSquare, FaExternalLinkAlt } from 'react-icons/fa'
 
-export default function Built() {
+export default function Built () {
   const Jobs = [
     {
-      image: "/images/1.jpeg",
-      type: "Featured Project",
-      title: "TeamCity CICD for maven Runners",
-      desc: "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
+      image: '/images/1.jpeg',
+      type: 'Featured Project',
+      title: 'TeamCity CICD for maven Runners',
+      desc: 'A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.'
     },
     {
-      image: "/images/1.jpeg",
-      type: "Featured Project",
-      title: "TeamCity CICD for maven Runners",
-      desc: "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
+      image: '/images/1.jpeg',
+      type: 'Featured Project',
+      title: 'TeamCity CICD for maven Runners',
+      desc: 'A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.'
     },
     {
-      image: "/images/1.jpeg",
-      type: "Featured Project",
-      title: "TeamCity CICD for maven Runners",
-      desc: "A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.",
-    },
-  ];
-  const [work, setWork] = useState(0);
+      image: '/images/1.jpeg',
+      type: 'Featured Project',
+      title: 'TeamCity CICD for maven Runners',
+      desc: 'A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.'
+    }
+  ]
+  const [work, setWork] = useState(0)
 
   return (
     <>
@@ -35,9 +35,9 @@ export default function Built() {
         </div>
         {Jobs.map((e, index) => {
           return (
-            <div className={Style.card} key={"text" + index}>
+            <div className={Style.card} key={'text' + index}>
               <div className={Style.card__image}>
-                <Image src="/images/1.jpeg" layout="fill" alt="img"></Image>
+                <Image src="/images/1.jpeg" layout="fill" loading="lazy" alt="img"></Image>
 
               </div>
               <div className={Style.card__content}>
@@ -60,9 +60,9 @@ export default function Built() {
 
               </div>
             </div>
-          );
+          )
         })}
       </div>
     </>
-  );
+  )
 }

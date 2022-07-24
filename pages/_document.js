@@ -1,8 +1,8 @@
 
-    import { Html, Head, Main, NextScript } from 'next/document'
+import { Html, Head, Main, NextScript } from 'next/document'
 
-    export default function Document() {
-      return (
+export default function Document () {
+  return (
         <Html>
           <Head>
           <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&display=swap" rel="stylesheet"/>
@@ -12,5 +12,5 @@
             <NextScript />
           </body>
         </Html>
-      )
-    }
+  )
+}

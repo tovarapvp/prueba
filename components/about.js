@@ -5,7 +5,7 @@ export default function About () {
   return (
     <div className={StyleAbout.about}>
       <div className={StyleAbout.title}>
-        <h6 className={StyleAbout.section}>About me</h6>
+        <h4 className={StyleAbout.section}>About me</h4>
         <div className={StyleAbout.separator}></div>
       </div>
       <div className={StyleAbout.abouts}>
@@ -19,28 +19,27 @@ export default function About () {
               StyleAbout.tec + ' animate__animated animate__zoomInRight'
             }
           >
-            TypeScript
+            React </span>
+          <span
+            className={
+              StyleAbout.tec + ' animate__animated animate__zoomInRight'
+            }
+          >
+           Jest/Cypress 
           </span>
           <span
             className={
               StyleAbout.tec + ' animate__animated animate__zoomInRight'
             }
           >
-            TypeScript
+            PHP
           </span>
           <span
             className={
               StyleAbout.tec + ' animate__animated animate__zoomInRight'
             }
           >
-            React
-          </span>
-          <span
-            className={
-              StyleAbout.tec + ' animate__animated animate__zoomInRight'
-            }
-          >
-            Eleventy
+            C+/C#
           </span>
           <span
             className={
@@ -65,7 +64,7 @@ export default function About () {
           src="/images/3.jpeg"
           width="300px"
           height="250px"
-          alt="logo"
+          alt="about"
           loading="lazy"
         />
       </div>

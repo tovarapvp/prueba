@@ -93,8 +93,12 @@ export default function Proyects () {
 
   return (
     <>
-      <h6>Other Noteworthy Projects</h6>
-      <span>View the archive</span>
+     
+      <div className={Style.title}>
+        <h4 >Other Noteworthy Projects</h4>
+      <h3>View the archive</h3>
+        
+      </div>
       <div className={Style.proyects}>
         {Jobs.map((e, index) => {
           return (

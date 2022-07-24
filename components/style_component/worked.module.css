@@ -1,157 +1,108 @@
-.worked{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  
-  grid-template-areas: 
-  "employ bar";
-  
-  align-items: center;
-  gap: 50px;
+.workeds {
+  margin: 0 auto;
+  display: flex;
+  max-width: 800px;
+  flex-wrap: wrap;
+  padding: 2.2em;
 }
 
-
-.separator > h6::after{
-    content: "";
-    width: 400px;
-    margin-left: 10px;
-    height: 0px;
-    border: 1px solid rgba(168, 178, 209, 0.5);
-
-
-
-}
-.bar > input[type="radio"] {
-    display: none;
+.worked {
+  display: flex;
+  flex-wrap: wrap;
+ margin-top: 20px;
+  gap: 20px;
+ justify-content: center;
 }
 
-.bar >  label  {
-    display: block;
-    font-family: 'Poppins';
-    font-style: normal;
-    font-size: 0.9rem;
-    color: #A8B2D1;
-    user-select: none;
-      
+.title {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  width: 100%;
+  gap: 10px;
+}
+.separator {
+  width: 30%;
+  height: 1px;
+  border: solid 1px var(--primary_text);
+}
+.section {
+  display: block;
+  max-width: 70%;
 }
 
 .bar {
-    padding: 0px;
-    margin: 0px;
-    border: none;
-    grid-area: employ;
-    overflow-x: hidden;
-    overflow-y: scroll;
-    height: 200px;
-}
-.employ{
-    max-width: 600px;
-    grid-area:bar;
- }
-.bar >  label::before  {
-width: auto;
-content: "";
-border-left: 5px solid #A8B2D1;
-border-bottom: 5px solid #A8B2D1;
-border-top: 5px solid #A8B2D1;
-margin: 0px;
-padding:0px;
-position: relative;
-left: -3px;
-}
- .bar > input[type="radio"]:checked + label  {
-    display: block;
-    
-    
-    height: 1;
-    transition: .5s;
-    background: rgba(100, 255, 218, 0.2);
-}
-.bar > input[type="radio"]:checked + label::before  {
-    content: "";
-  transition: 0.5s;
-  font-weight: 100;   
-    border-left: 5px solid #64FFDA;
-    border-bottom: 5px solid #64FFDA;
-    border-top: 5px solid #64FFDA;
-    margin: 0px;
-    padding:0px;
-    position: relative;
-    left: -3px;
-
-}
-
-.employ > p::before{
-    content:"\A";
-    border-style: solid;
-    border-width: 8px  0 8px 12px  ;
-    border-color: transparent transparent transparent #64FFDA ;
-    position: absolute;
-    margin:9px -20px
-
-
-}
-
-
-.worked_container {
-    max-width: 800px;
-  
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 40px;
-  }
-
-.title {
-    display: flex;
-    align-items: center;
-    width: 100%;
  
+  border: none;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  max-height: 200px;
+  flex: 0 1 300px;
+  margin-right: 20px;
 }
-.business{
-    font-size: 2em;
+.employ {
+  max-width: 600px;
+  flex: 0 0 300px;
 }
-  .separator {
-    width: 30%;
-    height: 1px;
-    border: solid 1px #64ffda;
-    margin-left: 20px;
-    margin-bottom: 0px;
-   
-  }
-  .section{
+
+.bar > input[type="radio"] {
+  display: none;
+}
+
+.bar > label {
   display: block;
-  width: 250px;
-  
-  }
-  @media (max-width:767px) {
-    .worked{
-        display: grid;
-        grid-template-columns: 1fr ;
-        grid-template-rows: 1fr;
-        grid-template-areas: 
-        "employ "
-        "bar";
-        margin: 20px;
-        align-items: flex-end;
-      }
-      
- 
-    .bar {
-        padding: 0px;
-        margin: 0px;
-        border: none;
-        height: 200px;
-        overflow: scroll;
-        overflow-x: hidden;
-    } 
- 
-    .employ{
-        max-width: 400px;
-      
-  }
-  .job{
-    width: 250px;
-    font-size: 20px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-size: 0.9rem;
+  color: var(--secondary_text);
+  user-select: none;
 }
 
+.bar > label::before {
+  width: auto;
+  content: "";
+  border-left: 5px solid var(--primary_text);
+  border-bottom: 5px solid var(--primary_text);
+  border-top: 5px solid var(--primary_text);
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  left: -3px;
+}
+.bar > input[type="radio"]:checked + label {
+  display: block;
+
+  height: 1;
+  transition: 0.5s;
+  background: rgba(100, 255, 218, 0.2);
+}
+.bar > input[type="radio"]:checked + label::before {
+  content: "";
+  transition: 0.5s;
+  font-weight: 100;
+  border-left: 5px solid var(--primary_text);
+  border-bottom: 5px solid var(--primary_text);
+  border-top: 5px solid var(--primary_text);
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  left: -3px;
+}
+
+.employ > p::before {
+  content: "";
+  border-style: solid;
+  border-width: 8px 0 8px 12px;
+  border-color: transparent transparent transparent var(--primary_text);
+  position: absolute;
+  margin: 9px -20px;
+}
+.employ > span {
+  color: var(--other_text);
+}
+
+
+
+.job {
+  color: var(--other_text);
 }

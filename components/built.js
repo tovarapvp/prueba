@@ -26,10 +26,10 @@ export default function Built () {
   ]
 
   return (
-    <>
+    
       <div className={Style.built}>
         <div className={Style.separator}>
-          <h6>Some Things I’ve built</h6>
+          <h4>Some Things I’ve built</h4>
         </div>
         {Jobs.map((e, index) => {
           return (
@@ -40,8 +40,8 @@ export default function Built () {
               </div>
               <div className={Style.card__content}>
 
-              <span>{e.type}</span>
-              <h5>{e.title}</h5>
+              <h3>{e.type}</h3>
+              <h4>{e.title}</h4>
               <p>{e.desc}</p>
               <div className={Style.links_card}>
                 <Link href="https://stackoverflow.com/" passHref={true}>
@@ -61,6 +61,6 @@ export default function Built () {
           )
         })}
       </div>
-    </>
+    
   )
 }

@@ -1,12 +1,21 @@
-.inf{
+.container{
     max-width: 800px;
+    display: flex;
+    flex-wrap: wrap;    
+     margin: 80px auto;
+      padding: 2.2em;           
+  }
+  .container *{
+    width: 100%;
+  }
+ 
+.sub_title{
+margin: 1rem 0;
+align-self:baseline;
 }
 
-.h4{
-    color: #A8B2D1;
-
-
-}
-.button{
-    padding:0 10px;
+.link_book{
+  max-width: 300px;
+  font-weight: 400;
+   padding: .5rem; 
 }

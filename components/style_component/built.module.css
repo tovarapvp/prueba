@@ -1,11 +1,18 @@
-.card{
-background-color: #233554;
+.built{
+   max-width: 800px;
+    margin: 20px auto;
+    padding: 2.2em;
+    justify-content: center;
+}
 
-box-shadow: 2px 2px 2px 1px white;
+.card{
+background-color: var(--backgroun-card);
+
+box-shadow: 2px 2px 2px 1px var(--other_text);
 padding: 20px  10px 20px 10px;
 display: flex;
 max-width: 800px;
-margin: 20px;
+margin: 20px 0px;
 }
 .card:nth-child(odd){
     border-top-left-radius: 30px;
@@ -19,15 +26,18 @@ border-bottom-left-radius:30px ;
 .card__image{
     position: relative;
     width:50%;
-    height: 247px;
+   max-height: 247px;
      
 }
 .card__content{
     margin-left: 20px;
     width: 70%;
 }
-.links_card{
-    color: #64FFDA;
+.card__content p{
+    font-size: 1rem;
+}
+.links_card a{
+    color: var(--primary_text);
     
 }
 .links_card a{

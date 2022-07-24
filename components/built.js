@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { useState } from 'react'
 import Style from './style_component/built.module.css'
 import { FaGithubSquare, FaExternalLinkAlt } from 'react-icons/fa'
 
@@ -25,7 +24,6 @@ export default function Built () {
       desc: 'A minimal, dark blue theme for VS Code, Sublime Text, Atom, iTerm, and more. Available on Visual Studio Marketplace, Package Control, Atom Package Manager, and npm.'
     }
   ]
-  const [work, setWork] = useState(0)
 
   return (
     <>

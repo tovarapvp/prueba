@@ -28,7 +28,7 @@ export default function Worked () {
                     type="radio"
                     name="prof"
                     value={index}
-                    checked={work == index}
+                    checked={work === index}
                     onChange={() => setWork(index)}/>
 
                 </label>

@@ -97,8 +97,8 @@ export default function Proyects () {
       <span>View the archive</span>
       <div className={Style.proyects}>
         {Jobs.map((e, index) => {
-          if (index < value) {
-            return (
+          return (
+          (index < value) ?
               <div className={Style.proy} key={'text' + index}>
                 <div>
                   <FaFolder />
@@ -112,10 +112,9 @@ export default function Proyects () {
                 <p>{e.desc}</p>
                 <span>{e.type}</span>
               </div>
-            )
-          } else {
-            <></>
-          }
+          :false
+          )
+
         })}
       </div>
       {value < Jobs.length
